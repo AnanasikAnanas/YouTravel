@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+@import 'tailwindcss';
+
+
+@theme {
+  --font-inter-tight: 'Inter Tight', sans-serif;
+  --color-mint-500: #1C7C7C;
+}
+
+body {
+  font-family: var(--font-inter-tight);
+}
+
+.container {
+  max-width: 1880px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: rgba(33, 33, 33, 0.04);
+}
+
+.navigation-links {
+  a {
+    @apply text-xl font-normal text-gray-400;
+    &:hover {
+      @apply text-black;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.hero-block {
+  background-image: url('@/public/Bg-Hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
